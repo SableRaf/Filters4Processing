@@ -1,7 +1,7 @@
 Filters4Processing
 ==================
 
-Filters4Processing is a growing collection of pixel shaders ported to Processing (most of them from Shadertoy) to be used with the filter() function.
+A growing collection of pixel shaders ported to Processing to be used with the filter() function. Most of these shaders come from the excellent [Shadertoy](https://www.shadertoy.com) by Iñigo Quilez.
 
 ## Filters
 
@@ -66,7 +66,6 @@ void draw() {
 }
 ```
 
-
 ## Notes about porting filters from Shadertoy
 
 Shadertoy and Processing both have their own quirks when it comes to shader programming. We need to make some changes in order to make Shadertoy code work with Processing.
@@ -84,6 +83,9 @@ There is more to it than this but these tips should cover most basic filters.
 Now go dig for some [shaders](https://www.shadertoy.com/results?query=filter) and help us extend the library of filters available for Processing!
 
 *Note: It is possible to port other types of shaders, but this repository focuses on filters.*
+
+## Acknowledgments
+Thanks to all the Shadertoy contributors for their hard work. This collection wouldn't exist without them.
 
 ## License
 All shaders from Shadertoy belong to there respective authors. Unless otherwise specified in the shader file, they are licensed under Creative Commons ([CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US))
