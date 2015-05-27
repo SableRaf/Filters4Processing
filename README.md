@@ -1,7 +1,7 @@
 Filters4Processing
 ==================
 
-Filters4Processing is a growing collection of filters for Processing.
+Filters4Processing is a growing collection of filters for Processing ported from Shadertoy. 
 
 ## Usage
 
