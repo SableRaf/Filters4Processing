@@ -1,7 +1,7 @@
 Filters4Processing
 ==================
 
-A growing collection of pixel shaders ported to Processing to be used with the `filter()` function. Most of these shaders come from the excellent [Shadertoy](https://www.shadertoy.com) by Iñigo Quilez.
+A growing collection of pixel shaders ported to Processing to be used with the `filter() function. Most of these shaders come from the excellent [Shadertoy](https://www.shadertoy.com) by Iñigo Quilez.
 
 ## Filters
 
@@ -86,6 +86,7 @@ Now go dig for some [shaders](https://www.shadertoy.com/results?query=filter) an
 
 ## Acknowledgments
 Thanks to all the Shadertoy contributors for their hard work. This collection wouldn't exist without them.
+Thanks to Andres Colubri for his work on the Processing Shader API.
 
 ## License
 All shaders from Shadertoy belong to there respective authors. Unless otherwise specified in the shader file, they are licensed under Creative Commons ([CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US))
