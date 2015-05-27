@@ -30,6 +30,8 @@ Filters4Processing is a growing collection of filters for Processing, most of th
 
 This is a minimal example showing how to import shader file in Processing and use it as a filter. 
 
+Note: Some shaders require additional uniforms. Refer to the example sketches included for details.
+
 ```Processing
 
 // Create an image object
@@ -64,12 +66,10 @@ void draw() {
 }
 ```
 
-Note: Some shaders require additional uniforms. Refer to the example sketches included for details.
-
 
 ## Notes about porting filters from Shadertoy
 
-Here are some useful tips if you want to help extend the library of filters available for Processing.
+Shadertoy and Processing both have their own quirks when it comes to shader programming. We need to make some changes in order to make Shadertoy code work with Processing.
 
 Replace:
 `void mainImage( out vec4 fragColor, in vec2 fragCoord )` -> `void main( void )`
@@ -81,7 +81,7 @@ Replace all:
 
 There is more to it than this but these tips should cover most basic filters.
 
-Now go dig for some [filters](https://www.shadertoy.com/results?query=filter)!
+Now go dig for some [shaders](https://www.shadertoy.com/results?query=filter) and help us extend the library of filters available for Processing!
 
 *Note: It is possible to port other types of shaders, but this repository focuses on filters.*
 
