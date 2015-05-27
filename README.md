@@ -1,7 +1,7 @@
 Filters4Processing
 ==================
 
-Filters4Processing is a growing collection of filters for Processing, most of them ported from Shadertoy. 
+Filters4Processing is a growing collection of pixel shaders ported to Processing (most of them from Shadertoy) to be used with the filter() function.
 
 ## Filters
 
