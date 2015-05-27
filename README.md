@@ -3,7 +3,7 @@ Filters4Processing
 
 Filters4Processing is a growing collection of filters for Processing.
 
-# Usage
+## Usage
 
 ```Processing
 
@@ -42,7 +42,7 @@ void draw() {
 This is a minimal example. Some shaders require additional uniforms. Refer to the comments in the code or publish an issue if something is not working as it should.
 
 
-# Notes about porting filters from Shadertoy
+## Notes about porting filters from Shadertoy
 
 Here are some useful tips if you want to help extend the library of filters available for Processing.
 
@@ -60,5 +60,5 @@ There is more to it than this but these tips should cover most basic filters.
 
 Now go dig for [filters on Shadertoy](https://www.shadertoy.com/results?query=filter)!
 
-# License
+## License
 All shaders from Shadertoy belong to there respective authors. Unless otherwise specified in the shader file, they are licensed under Creative Commons ([CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US))
