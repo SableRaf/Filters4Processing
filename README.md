@@ -60,7 +60,7 @@ There is more to it than this but these tips should cover most basic filters.
 
 Now go dig for some [filters](https://www.shadertoy.com/results?query=filter)!
 
-*Note: It is of course possible to port other types of shaders, but this document focuses on filters.*
+*Note: It is possible to port other types of shaders, but this repository focuses on filters.*
 
 ## License
 All shaders from Shadertoy belong to there respective authors. Unless otherwise specified in the shader file, they are licensed under Creative Commons ([CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US))
