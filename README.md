@@ -1,7 +1,30 @@
 Filters4Processing
 ==================
 
-Filters4Processing is a growing collection of filters for Processing ported from Shadertoy. 
+Filters4Processing is a growing collection of filters for Processing, most of them ported from Shadertoy. 
+
+## Filters
+
+### Barrel Blur Chroma
+![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/BarrelBlurChroma.jpg)
+
+### Barrel & Pincushion
+![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/BarrelPincushion.png)
+
+### Bicubic Filter
+![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/Bicubic.jpg)
+
+### Bilateral Filter (denoise)
+![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/Bilateral.jpg)
+
+### Contrast, Saturation, Brightness
+![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/ConSatBri.jpg)
+
+### Dithering
+![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/Dithering.jpg)
+
+### Edge filter
+![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/Edge.jpg)
 
 ## Usage
 
