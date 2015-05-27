@@ -30,7 +30,7 @@ A growing collection of pixel shaders ported to Processing to be used with the `
 
 This is a minimal example showing how to import shader file in Processing and use it as a filter. 
 
-Note: Some shaders require additional uniforms. Refer to the example sketches included for details.
+*Note: Some shaders require additional uniforms. For details, refer to the example sketches included.
 
 ```Processing
 
