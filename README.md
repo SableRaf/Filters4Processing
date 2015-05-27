@@ -30,7 +30,7 @@ A growing collection of pixel shaders ported to Processing to be used with the `
 
 This is a minimal example showing how to import shader file in Processing and use it as a filter. 
 
-*Note: Some shaders require additional uniforms. For details, refer to the example sketches included.
+*Note: Some shaders require additional uniforms. For details, refer to the example sketches included.*
 
 ```Processing
 
@@ -85,8 +85,7 @@ Now go dig for some [shaders](https://www.shadertoy.com/results?query=filter) an
 *Note: It is possible to port other types of shaders, but this repository focuses on filters.*
 
 ## Acknowledgments
-Thanks to all the Shadertoy contributors for their hard work. This collection wouldn't exist without them.
-Thanks to Andres Colubri for his work on the Processing Shader API.
+Thanks to all the Shadertoy contributors for their hard work. This collection wouldn't exist without them. Thanks to Andres Colubri for his work on the Processing Shader API.
 
 ## License
 All shaders from Shadertoy belong to there respective authors. Unless otherwise specified in the shader file, they are licensed under Creative Commons ([CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US))
