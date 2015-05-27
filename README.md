@@ -35,7 +35,7 @@ void draw() {
   // Draw the image on the scene
   image( myImage, 0, 0 );
 
-  // Applies the shader to the scene
+  // Applie the shader to the scene
   filter( myFilter );
 
 }
