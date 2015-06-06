@@ -24,20 +24,19 @@ void draw() {
 
   background(255);
   
+  // Draw some moving circles
   translate(width/2,height/2);
-  
   noStroke();
   fill(0);
   ellipse(0, 0, 100, 100);
-  
   float x = map(sin(frameCount*0.01), -1.0, 1.0, -120.0, 120.0);
   ellipse(x, 0, 100, 100);
   ellipse(-x, 0, 100, 100);
-
   float y = map(sin(frameCount*0.01), -1.0, 1.0, -120.0, 120.0);
   ellipse(0, y, 100, 100);
   ellipse(0, -y, 100, 100);
-    
+  
+  
   if(!mousePressed) {
     
     // Vertical blur pass
