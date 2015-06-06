@@ -1,8 +1,5 @@
 
-// This is a more flexible gaussian blur than 
-// the one included in the Processing shader examples
-// Source: http://forum.processing.org/two/discussion/comment/24078/#Comment_24078
-
+// This one is based on the SepBlur example included in Processing
 // Move the cursor around to change the parameters of the blur
 
 PShader gaussianBlur;
