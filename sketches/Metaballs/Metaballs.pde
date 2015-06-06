@@ -1,4 +1,6 @@
 
+// Click and hold to deactivate the filter temporarily
+
 // The 2D metaball filter is a combination of blur and threshold
 PShader gaussianBlur, threshold;
 
@@ -24,21 +26,29 @@ void draw() {
   
   noStroke();
   fill(0);
-  ellipse(0,0,100,100);
+  ellipse(0, 0, 100, 100);
   
-  float xPosition = map(sin(frameCount*0.02), -1.0, 1.0, -100.0, 100.0)
-  ellipse(,0,50,50);
+  float x = map(sin(frameCount*0.01), -1.0, 1.0, -120.0, 120.0);
+  ellipse(x, 0, 100, 100);
+  ellipse(-x, 0, 100, 100);
+
+  float y = map(sin(frameCount*0.01), -1.0, 1.0, -120.0, 120.0);
+  ellipse(0, y, 100, 100);
+  ellipse(0, -y, 100, 100);
     
-  // Vertical blur pass
-  gaussianBlur.set("horizontalPass", 0);
-  filter(gaussianBlur);
+  if(!mousePressed) {
+    
+    // Vertical blur pass
+    gaussianBlur.set("horizontalPass", 0);
+    filter(gaussianBlur);
+    
+    // Horizontal blur pass
+    gaussianBlur.set("horizontalPass", 1);
+    filter(gaussianBlur);
+    
+    filter(threshold);
   
-  // Horizontal blur pass
-  gaussianBlur.set("horizontalPass", 1);
-  filter(gaussianBlur);
-  
-  filter(threshold);
-  
+  }
   
 }
 
