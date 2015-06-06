@@ -29,6 +29,9 @@ A growing collection of pixel shaders ported to Processing to be used with the `
 ### Edge filter
 ![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/Edge.jpg)
 
+### Metaballs
+![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/Metaballs.jpg)
+
 ## Usage
 
 This is a minimal example showing how to import shader file in Processing and use it as a filter. 
