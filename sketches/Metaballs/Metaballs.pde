@@ -20,7 +20,7 @@ void setup() {
 }
 
 void draw() {  
-  
+   
   background(255);
   
   // Draw some moving circles
