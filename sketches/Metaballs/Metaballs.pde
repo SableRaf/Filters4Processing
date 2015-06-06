@@ -17,11 +17,12 @@ void setup() {
   
   threshold = loadShader("threshold.glsl");
   threshold.set("threshold", 0.5);
+  threshold.set("antialiasing", 0.05); // values between 0.00 and 0.10 work best
   
 }
 
 void draw() {  
-
+  
   background(255);
   
   // Draw some moving circles
