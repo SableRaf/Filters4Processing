@@ -1,4 +1,6 @@
 
+// Note: this filter is meant to be used on black & white images
+
 // Click and hold to deactivate the filter temporarily
 
 // The 2D metaball filter is a combination of blur and threshold
