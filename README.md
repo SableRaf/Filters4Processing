@@ -5,6 +5,9 @@ A growing collection of pixel shaders ported to Processing to be used with the `
 
 ## Filters
 
+### Gaussian blur
+![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/GaussianBlur.jpg)
+
 ### Barrel Blur Chroma
 ![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/BarrelBlurChroma.jpg)
 
