@@ -16,6 +16,7 @@ void setup() {
   gaussianBlur = loadShader("gaussianBlur.glsl");
   gaussianBlur.set("kernelSize", 32); // How big is the sampling kernel?
   gaussianBlur.set("strength", 7.0); // How strong is the blur?
+  // How deep is your love?
   
 }
 
