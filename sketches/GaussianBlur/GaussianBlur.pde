@@ -32,7 +32,7 @@ void draw() {
     
   // Vertical pass
   gaussianBlur.set("horizontalPass", 0);
-  filter(gauss ianBlur);
+  filter(gaussianBlur);
   
   // Horizontal pass
   gaussianBlur.set("horizontalPass", 1);
