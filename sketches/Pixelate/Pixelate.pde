@@ -8,6 +8,9 @@
 
 // Hold mouse click to show unfiltered image
 
+// Note: this version has unwanted artifacts that do not appear on the shadertoy original
+// See http://forum.processing.org/two/discussion/1723/unwanted-artifacts-in-a-simple-pixelation-shader
+
 PShader myFilter;
 PImage  myImage;
 

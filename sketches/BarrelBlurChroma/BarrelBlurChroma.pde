@@ -7,7 +7,7 @@ import processing.video.*;
 Movie movie;
 
 // Create the shader object
-PShader myShader;
+PShader barrelBlurChroma;
 
 // How much barrel effect do we want?
 // Values between 0.5 and 3.0 work best, but feel free to try other values
@@ -22,9 +22,9 @@ void setup() {
   movie.loop();
   
   // Load and configure the shader
-  myShader = loadShader("shader.glsl");
-  myShader.set("sketchSize", float(width), float(height));
-  myShader.set("barrelPower", barrel);
+  barrelBlurChroma = loadShader("barrelBlurChroma.glsl");
+  barrelBlurChroma.set("sketchSize", float(width), float(height));
+  barrelBlurChroma.set("barrelPower", barrel);
 
 }
 
@@ -38,7 +38,7 @@ void draw() {
   image(movie, 0, 0, width, height);
 
   if( !mousePressed ) {
-    filter(myShader);
+    filter(barrelBlurChroma);
   }
   
 }

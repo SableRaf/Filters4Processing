@@ -8,7 +8,7 @@
 
 // Hold mouse click to show unfiltered image
 
-PShader myFilter; 
+PShader bilateral; 
 PImage  myImage;
 
 void setup() {
@@ -16,9 +16,9 @@ void setup() {
   size( 512, 512, P2D );
   
   myImage  = loadImage( "texture.jpg" );
-  myFilter = loadShader( "shader.glsl" );
+  bilateral = loadShader( "bilateral.glsl" );
   
-  myFilter.set("sketchSize", float(width), float(height));
+  bilateral.set("sketchSize", float(width), float(height));
 
 }
 
@@ -32,7 +32,7 @@ void draw() {
 
   if( !mousePressed ) {
     // Applies the shader to everything that has already been drawn
-    filter( myFilter );
+    filter( bilateral );
   }
 
 }

@@ -8,7 +8,7 @@
 
 // Hold mouse click to show unfiltered image
 
-PShader myFilter;
+PShader fisheyePincushion;
 PImage  myImage;
 
 void setup() {
@@ -17,6 +17,9 @@ void setup() {
   
   myImage  = loadImage( "texture.jpg" );
 
+  fisheyePincushion = loadShader( "fisheyePincushion.glsl" );
+  
+  fisheyePincushion.set("sketchSize", float(width), float(height));
 
 }
 
@@ -24,21 +27,17 @@ void setup() {
 void draw() {
 
   background(0);  
-  
-  myFilter = loadShader( "shader.glsl" );
-  
-  myFilter.set("sketchSize", float(width), float(height));
 
   // Draw the image on the scene
   image( myImage, 0, 0 );
   
   // Set the fisheye amount (the range is between -0.5 and 0.5)
   // Negative for pincushion and positive for fisheye
-  myFilter.set("amount", sin(frameCount * 0.01) * 0.5 );
+  fisheyePincushion.set("amount", sin(frameCount * 0.01) * 0.5 );
 
   if( !mousePressed ) {
     // Applies the shader to everything that has already been drawn
-    filter( myFilter );
+    filter( fisheyePincushion );
   }
 
 }

@@ -7,7 +7,7 @@ import processing.video.*;
 Movie movie;
 
 // Create the shader object
-PShader myShader;
+PShader ntsc;
 
 void setup() {
 
@@ -18,8 +18,8 @@ void setup() {
   movie.loop();
   
   // Load and configure the shader
-  myShader = loadShader("shader.glsl");
-  myShader.set("sketchSize", float(width), float(height));
+  ntsc = loadShader("ntsc.glsl");
+  ntsc.set("sketchSize", float(width), float(height));
 
 }     
 
@@ -33,7 +33,7 @@ void draw() {
   image(movie, 0, 0, width, height);
 
   if( !mousePressed ) {
-    filter(myShader);
+    filter(ntsc);
   }
   
 }

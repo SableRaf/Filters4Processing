@@ -1,5 +1,5 @@
 
-PShader myFilter;
+PShader dithering;
 PImage  sourceImage, noiseImage;
 
 void setup() {
@@ -9,11 +9,11 @@ void setup() {
   sourceImage  = loadImage( "texture.jpg" ); 
   noiseImage  = loadImage( "noise.png" );
   
-  myFilter = loadShader( "shader.glsl" );
+  dithering = loadShader( "dithering.glsl" );
   
-  myFilter.set("sketchSize", float(width), float(height));
+  dithering.set("sketchSize", float(width), float(height));
   
-  myFilter.set("noiseTexture", noiseImage);
+  dithering.set("noiseTexture", noiseImage);
  
 }
 
@@ -26,6 +26,6 @@ void draw() {
   image( sourceImage, 0, 0 );
 
   // Applies the shader to everything that has already been drawn
-  filter( myFilter );
+  filter( dithering );
 
 }
