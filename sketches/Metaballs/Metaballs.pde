@@ -1,8 +1,6 @@
 
 // Note: this filter is meant to be used on black & white images
 
-// Click and hold to deactivate the filter temporarily
-
 // The 2D metaball filter is a combination of blur and threshold
 PShader gaussianBlur, threshold;
 
@@ -37,20 +35,15 @@ void draw() {
   ellipse(0, y, 100, 100);
   ellipse(0, -y, 100, 100);
   
+  // Vertical blur pass
+  gaussianBlur.set("horizontalPass", 0);
+  filter(gaussianBlur);
   
-  if(!mousePressed) {
-    
-    // Vertical blur pass
-    gaussianBlur.set("horizontalPass", 0);
-    filter(gaussianBlur);
-    
-    // Horizontal blur pass
-    gaussianBlur.set("horizontalPass", 1);
-    filter(gaussianBlur);
-    
-    filter(threshold);
+  // Horizontal blur pass
+  gaussianBlur.set("horizontalPass", 1);
+  filter(gaussianBlur);
   
-  }
+  filter(threshold);
   
 }
 
