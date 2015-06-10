@@ -4,6 +4,9 @@
 // Original shader by simesgreen
 // https://www.shadertoy.com/view/4sl3zr
 
+// New original shader by radiodario
+// https://www.shadertoy.com/view/ltjGDh
+
 // Ported to Processing by Raphaël de Courville <twitter: @sableRaph>
 
 #ifdef GL_ES
@@ -14,13 +17,13 @@ precision mediump int;
 uniform sampler2D texture;
 
 uniform vec2 sketchSize;
+uniform vec2 offset;
 
-uniform float division;
+uniform float pixelSize;
 
 void main(void)
 {
-	vec2 uv = gl_FragCoord.xy / sketchSize.xy;
-	vec2 divs = vec2(sketchSize.x * division / sketchSize.y, division);
-	uv = floor(uv * divs)/ divs;
+	// we might not need the last term
+	vec2 uv = ((floor((gl_FragCoord.xy - offset) / pixelSize ) * 0.5) * pixelSize + offset) / sketchSize + vec2(0.5) / sketchSize;
 	gl_FragColor = texture2D(texture, uv);
 }
