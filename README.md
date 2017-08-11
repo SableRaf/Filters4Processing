@@ -32,6 +32,9 @@ A growing collection of pixel shaders ported to Processing to be used with the `
 ### Metaballs
 ![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/Metaballs.jpg)
 
+### Droste
+![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/Droste.png)
+
 ## Usage
 
 This is a minimal example showing how to import a shader file in Processing and use it as a filter. 
