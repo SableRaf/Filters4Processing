@@ -3,6 +3,8 @@ Filters4Processing
 
 A growing collection of pixel shaders ported to Processing to be used with the `filter()` function. Most of these shaders come from the excellent [Shadertoy](https://www.shadertoy.com) by Iñigo Quilez.
 
+*Note: This repository focuses on filters. If you want to port any other type of shader from Shadertoy to Processing, check out this other repository [Shadertoy2Processing](https://github.com/SableRaf/Shadertoy2Processing)*
+
 ## Filters
 
 ### Gaussian blur
@@ -37,7 +39,7 @@ A growing collection of pixel shaders ported to Processing to be used with the `
 
 ## Usage
 
-This is a minimal example showing how to import a shader file in Processing and use it as a filter. 
+This is a minimal example showing how to import a shader file in Processing and use it as a filter.
 
 *Note: Some shaders require additional uniforms. For details, refer to the example sketches included.*
 
@@ -47,24 +49,24 @@ This is a minimal example showing how to import a shader file in Processing and 
 PImage  myImage;
 
 // Create a shader object
-PShader myFilter; 
+PShader myFilter;
 
 void setup() {
 
   size( 512, 512, P2D );
-  
+
   // Import the image file
   myImage  = loadImage( "texture.jpg" );
 
   // Import the shader file
   myFilter = loadShader( "shader.glsl" );
-  
+
   // Pass the size of the window to the shader
   myFilter.set("sketchSize", float(width), float(height));
 
 }
 
-void draw() { 
+void draw() {
 
   // Draw the image on the scene
   image( myImage, 0, 0 );
@@ -90,8 +92,6 @@ Replace all:
 There is more to it than this but these tips should cover most basic filters.
 
 Now go dig for some [shaders](https://www.shadertoy.com/results?query=filter) and help us extend the library of filters available for Processing!
-
-*Note: It is possible to port other types of shaders, but this repository focuses on filters.*
 
 ## Acknowledgments
 Thanks to all the Shadertoy contributors for their hard work. This collection wouldn't exist without them. Thanks to Andres Colubri for his work on the Processing Shader API.
