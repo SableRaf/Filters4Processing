@@ -71,7 +71,7 @@ void draw() {
   // Draw the image on the scene
   image( myImage, 0, 0 );
 
-  // Applie the shader to the scene
+  // Apply the shader to the scene
   filter( myFilter );
 
 }
