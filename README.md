@@ -10,32 +10,52 @@ A growing collection of pixel shaders ported to Processing to be used with the `
 ### Gaussian blur
 ![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/GaussianBlur.jpg)
 
+_Original shader by Callum Hay: http://callumhay.blogspot.com/2010/09/gaussian-blur-shader-glsl.html_
+
 ### Barrel Blur Chroma
-![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/BarrelBlurChroma.jpg)
+![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/BarrelBlurChroma.jpg) 
+
+_Original shader by hornet: https://www.shadertoy.com/view/XssGz8_
 
 ### Barrel & Pincushion
 ![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/BarrelPincushion.png)
 
+_Original shader by SanchYESS: https://www.shadertoy.com/view/4s2GRR_
+
 ### Bicubic Filter
 ![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/Bicubic.jpg)
+
+_Original shader by inigo quilez - iq/2013 ([CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/))_
 
 ### Bilateral Filter (denoise)
 ![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/Bilateral.jpg)
 
+_Original shader by mrharicot: https://www.shadertoy.com/view/4dfGDH_
+
 ### Contrast, Saturation, Brightness
 ![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/ConSatBri.jpg)
+
+_Original shader by Romain Dura: http://mouaif.wordpress.com/?p=94_
 
 ### Dithering
 ![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/Dithering.jpg)
 
+_Original shader by RavenWorks: https://www.shadertoy.com/view/Xs23zW_
+
 ### Edge filter
 ![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/Edge.jpg)
+
+_Original shader by Ken Slade: https://www.shadertoy.com/view/ldsSWr_
 
 ### Metaballs
 ![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/Metaballs.jpg)
 
+_Uses the blur shader by Callum Hay: http://callumhay.blogspot.com/2010/09/gaussian-blur-shader-glsl.html_
+
 ### Droste
 ![screenshot](https://github.com/SableRaf/Filters4Processing/blob/master/screenshots/Droste.png)
+
+_Original shader by ArKano22: http://www.gamedev.net/topic/590070-glsl-droste/ (adapted by @monkstone)_
 
 ## Usage
 
